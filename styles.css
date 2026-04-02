@@ -1,0 +1,15 @@
+p {
+    color: red;
+    font-size: 20px;
+}
+
+/* changes paragraph? */
+
+h1 {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+/* changes all the header colors */

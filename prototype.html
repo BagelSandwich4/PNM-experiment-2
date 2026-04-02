@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color:powderblue">
+    <script>
+        function doStuff(click) {
+            var pic;
+            if (click == 0) {
+                pic = "RapidRouteRailersLogo.png"
+            } else {
+                pic = "imsoscared.png"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+
+        function nukeWebpage() {
+            document.open();
+            document.write("<h1> ITS ALL GONE THEY TOOK IT ALL!! KYLE ITS ALL GONE</h1>")
+            document.close();
+        }
+
+    </script>
+    <h1>
+        nav elements
+        <img id="myImage" src="RapidRouteRailersLogo.png" width="100" height="100">
+        <p>
+            <button type="button" onclick="doStuff(1)">click me</button>
+            <button type="button" onclick="doStuff(0)">click me too</button>
+            <button type="button" onclick="nukeWebPage()">dont click me if u wanna live</button>
+        </p>
+
+        <nav>
+            <a href="#photos">photos</a>
+            <a href="#no photos">no photos</a>
+        </nav>
+    </h1>
+
+    <div id="photos">
+        <h1> theres no photos here </h1>
+    </div>
+
+    <div id="no photos"> <img src="RapidRouteRailersLogo.png" width=500 height=500> </div>
+</body>
+
+</html>
