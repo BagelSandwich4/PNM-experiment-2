@@ -1,37 +1,78 @@
 <!DOCTYPE html>
-<html>
-<style>
-    .button {
-        background-color: #04AA6D;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+<html lang="en">
 
-    .header {
-        color: black;
-        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-        text-align: center;
-    }
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
 
-    .center_text {
-        text-align: center;
-    }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rapid Route R</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .headerstyle {
+            background: white;
+            border: 6px solid rgb(255, 255, 255);
+            border-width: medium;
+            font-family: "Boldonse", system-ui;
+        }
+
+        body {
+            background: #ffa8a8;
+            font-family: "Boldonse", system-ui;
+            ;
+            /* height of the screen */
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* rem is relative to font space */
+            padding: 2rem 1.5rem;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 360px;
+            padding: 1rem;
+            border: none;
+            /* border-radius: 10px; */
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: "Boldonse", system-ui;
+            cursor: pointer;
+            background: #ff0000;
+            color: #fff;
+            transition: opacity 0.2s;
+            box-shadow: 10px 5px 5px rgb(106, 23, 23);
+        }
+
+        .btn:active {
+            opacity: 0.75;
+        }
+    </style>
+
+</head>
 
 <body>
-    <h1 class=header>Rapid Route Railers. SORRY WEBSITE IN PROGRESS</h1>
-    <p class=center_text>paragraph stuffs</p>
-    <a href=library.html class="button"> Library </a>
-    <a href=garmentdistrict.html class="button"> Garment District </a>
-    <a href=garmentdistrict.html class="button"> Garment District </a>
-    <a href=garmentdistrict.html class="button"> Garment District </a>
+    <h1 class="headerstyle"> Rapid Route Railers </h1>
+    <p> Bored? Want a third space to access? Click here! </p>
+    <button class="btn" onclick="window.location.href='page_images/Fallout Shelter.png'">Fallout Shelter</button>
+    <button class="btn" onclick="window.location.href='page_images/Garment District.png'">Garment District</button>
+    <button class="btn" onclick="window.location.href='page_images/Isabella Stewart Gardner Museum.png'">Gardner
+        Museum</button>
+    <button class="btn" onclick="window.location.href='page_images/Japan Festival.png'">Japan Festival</button>
+    <button class="btn" onclick="window.location.href='page_images/Embroidery Workshop.png'">Embroidery
+        Workshop</button>
+
 </body>
 
 </html>
